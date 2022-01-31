@@ -38,6 +38,8 @@ def determine_winner(userMove, computerMove):
     
 def main():
     
+    #player_name = os.getenv("PLAYER_NAME", default="Player One")
+
     #list of possible user moves
     choiceList = ["rock", "paper", "scissors"]
 
@@ -57,7 +59,8 @@ def main():
 
     #computer selects move
     computerChoice = random.choice(choiceList)
-
+    #alt: from random import choice
+    #alt: computerChoice = choice(choiceList)
 
     print("The computer chose", computerChoice)
 
