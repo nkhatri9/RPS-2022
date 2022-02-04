@@ -9,6 +9,9 @@
 import random
 import os
 
+#allow the user to configure their own player name by passing an environment variable called PLAYER_NAME
+player_name = os.getenv("PLAYER_NAME", default="Player One")
+
 def determine_winner(userMove, computerMove):
     #user chooses rock
     gameResult = None
@@ -37,8 +40,8 @@ def determine_winner(userMove, computerMove):
         print("It's a tie!")
     
 def main():
-    
-    #player_name = os.getenv("PLAYER_NAME", default="Player One")
+
+    print("Hi", player_name + "!")
 
     #list of possible user moves
     choiceList = ["rock", "paper", "scissors"]
@@ -59,8 +62,6 @@ def main():
 
     #computer selects move
     computerChoice = random.choice(choiceList)
-    #alt: from random import choice
-    #alt: computerChoice = choice(choiceList)
 
     print("The computer chose", computerChoice)
 
