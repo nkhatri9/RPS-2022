@@ -66,7 +66,8 @@ def main():
     print("The computer chose", computerChoice)
 
     #determine who wins
-    determine_winner(userChoice, computerChoice)
+    result = determine_winner(userChoice, computerChoice)
+    print(result)
 
 if __name__ == "__main__":
     main()
