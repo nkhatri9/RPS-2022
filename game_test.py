@@ -11,14 +11,14 @@ from game import determine_winner
 
 def test_determination_of_the_winner():
 
-    assert determine_winner("rock", "rock") == None
-    assert determine_winner("rock", "paper") == "paper"
-    assert determine_winner("rock", "scissors") == "rock"
+    assert determine_winner("rock", "rock") == "It's a tie!"
+    assert determine_winner("rock", "paper") == "You lose!"
+    assert determine_winner("rock", "scissors") == "You win!"
 
-    assert determine_winner("paper", "rock") == "paper"
-    assert determine_winner("paper", "paper") == None
-    assert determine_winner("paper", "scissors") == "scissors"
+    assert determine_winner("paper", "rock") == "You win!"
+    assert determine_winner("paper", "paper") == "It's a tie!"
+    assert determine_winner("paper", "scissors") == "You lose!"
 
-    assert determine_winner("scissors", "rock") == "rock"
-    assert determine_winner("scissors", "paper") == "scissors"
-    assert determine_winner("scissors", "scissors") == None
+    assert determine_winner("scissors", "rock") == "You lose!"
+    assert determine_winner("scissors", "paper") == "You win!"
+    assert determine_winner("scissors", "scissors") == "It's a tie!"
