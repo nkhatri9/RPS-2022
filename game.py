@@ -16,28 +16,28 @@ def determine_winner(userMove, computerMove):
     #user chooses rock
     gameResult = None
     if userMove == "rock" and computerMove == "paper":
-        print("You lose!")
+        return "You lose!"
     elif userMove == "rock" and computerMove == "scissors":
-        print("You win!")
+        return "You win!"
     elif userMove == "rock" and computerMove == "rock":
-        print("It's a tie!")
+        return "It's a tie!"
 
     #user chooses paper
 
     if userMove == "paper" and computerMove == "scissors":
-        print("You lose!")
+        return "You lose!"
     elif userMove == "paper" and computerMove == "rock":
-        print("You win!")
+        return "You win!"
     elif userMove == "paper" and computerMove == "paper":
-        print("It's a tie!")
+        return "It's a tie!"
 
     #user chooses scissors
     if userMove == "scissors" and computerMove == "rock":
-        print("You lose!")
+        return "You lose!"
     elif userMove == "scissors" and computerMove == "paper":
-        print("You win!")
+        return "You win!"
     elif userMove == "scissors" and computerMove == "scissors":
-        print("It's a tie!")
+        return "It's a tie!"
     
 def main():
 
@@ -68,4 +68,5 @@ def main():
     #determine who wins
     determine_winner(userChoice, computerChoice)
 
-main()
+if __name__ == "__main__":
+    main()
