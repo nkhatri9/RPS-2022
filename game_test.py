@@ -22,3 +22,5 @@ def test_determination_of_the_winner():
     assert determine_winner("scissors", "rock") == "You lose!"
     assert determine_winner("scissors", "paper") == "You win!"
     assert determine_winner("scissors", "scissors") == "It's a tie!"
+
+test_determination_of_the_winner()

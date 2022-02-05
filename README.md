@@ -5,7 +5,7 @@ A Starter Repository for the [Rock Paper Scissors Exercise](https://github.com/p
 ## Setup
 
 Allow the user to configure their own player name by passing an environment variable called PLAYER_NAME:
-Pass the environment variable to the script during runtime
+Pass the environment variable to the script during runtime:
 
 ```sh
 PLAYER_NAME="Jon Snow" python game.py
